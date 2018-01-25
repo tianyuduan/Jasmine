@@ -9,6 +9,16 @@ class User < ApplicationRecord
   
   attr_reader :password
   
+  has_many :subs,
+    class_name: :Sub,
+    foreign_key: :moderator_id,
+    primary_key: :id,
+    inverse_of: :moderator
+
+  has_many :posts, inverse_of: :author
+  has_many :comments, inverse_of: :author
+  has_many :user_votes, inverse_of: :user
+  
   def self.find_by_credentials(username, password)
       user = User.find_by(user: username)
       return user if user && BCrypt::Password.new(user.password_digest).is_password?(password)
