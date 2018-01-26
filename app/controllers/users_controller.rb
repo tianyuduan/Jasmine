@@ -1,4 +1,10 @@
 class UsersController < ApplicationController
+  
+  def index
+    # @subs = Sub.all
+    render :index
+  end
+  
   def create
   @user = User.new(user_params)
 
