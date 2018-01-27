@@ -1,7 +1,7 @@
 body {
   background: #e9e9e9;
   color: #666666;
-  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  font-family: Poppins-Regular;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,10 +22,10 @@ body {
   font-size: 12px;
 }
 .pen-title span .fa {
-  color: #ed2553;
+  color: #00ad5f;
 }
 .pen-title span a {
-  color: #ed2553;
+  color: #00ad5f;
   font-weight: 600;
   text-decoration: none;
 }
@@ -38,7 +38,7 @@ body {
 .rerun a {
   cursor: pointer;
   display: inline-block;
-  background: #ed2553;
+  background: #00ad5f;
   border-radius: 3px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -81,7 +81,7 @@ body {
 #portfolio {
   bottom: 96px;
   right: 36px;
-  background: #ed2553;
+  background: #00ad5f;
   width: 44px;
   height: 44px;
   -webkit-animation: buttonFadeInUp 1s ease;
@@ -93,15 +93,10 @@ body {
 
 /* Container */
 .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  position: relative;
   max-width: 460px;
   width: 100%;
   margin: 0 auto 100px;
-  z-index: 5;
 }
 .container.active .card:first-child {
   background: #f2f2f2;
@@ -169,7 +164,7 @@ body {
 
 /* Card */
 .card {
-  position: relative;
+  position: absolute;
   background: #ffffff;
   border-radius: 5px;
   padding: 60px 0 40px 0;
@@ -195,10 +190,10 @@ body {
 .card .title {
   position: relative;
   z-index: 1;
-  border-left: 5px solid #ed2553;
+  border-left: 5px solid #00ad5f;
   margin: 0 0 35px;
   padding: 10px 0 10px 50px;
-  color: #ed2553;
+  color: #00ad5f;
   font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
@@ -254,7 +249,7 @@ body {
 .card .input-container .bar:before, .card .input-container .bar:after {
   content: '';
   position: absolute;
-  background: #ed2553;
+  background: #00ad5f;
   width: 0;
   height: 2px;
   -webkit-transition: .2s ease;
@@ -300,7 +295,7 @@ body {
   top: 50%;
   left: 50%;
   display: block;
-  background: #ed2553;
+  background: #00ad5f;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -310,10 +305,10 @@ body {
   transition: .3s ease;
 }
 .card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
-  border-color: #ed2553;
+  border-color: #00ad5f;
 }
 .card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
-  color: #ed2553;
+  color: #00ad5f;
 }
 .card .button-container button:active span, .card .button-container button:focus span {
   color: #ffffff;
@@ -359,7 +354,7 @@ body {
   /* Button */
 }
 .card.alt .toggle {
-  position: absolute;
+  position: relative;
   background: #00ad5f;
   width: 140px;
   height: 140px;
@@ -432,7 +427,7 @@ body {
   border-color: #ffffff;
 }
 .card.alt .button-container button span {
-  color: #ed2553;
+  color: #00ad5f;
 }
 .card.alt .button-container button:hover {
   background: rgba(255, 255, 255, 0.9);
@@ -440,7 +435,7 @@ body {
 .card.alt .button-container button:active:before, .card.alt .button-container button:focus:before {
   display: none;
 }
-
+/* 00ad5f */
 /* Keyframes */
 @-webkit-keyframes buttonFadeInUp {
   0% {

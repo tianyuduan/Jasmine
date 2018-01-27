@@ -30,7 +30,7 @@
 
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 		<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -65,7 +65,7 @@
 							Sign in
 						</button>
 					</div>
-							
+
 					<div class="w-full text-center p-t-27 p-b-239">
 						<span class="txt1">
 							Forgot
@@ -76,48 +76,49 @@
 						</a>
 					</div>
 
-					<div class="w-full text-center toggle">
-						<a href="#" onclick='onclick="document.getElementById('id01') class="txt3"'>
+					<div class="w-full text-center">
+						<a href="#" class="txt3 toggle">
 							Sign Up
-							<div class="w3-container">
-							<div id="id01" class="w3-modal">
-						    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
-									
-									<div class="w3-center"><br>
-									 <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-								 </div>
-
-									<form class="w3-container" action="/action_page.php">
-										<div class="w3-section">
-											<label><b>Username</b></label>
-											<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
-											<label><b>Password</b></label>
-											<input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
-											<button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
-											<input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
-										</div>
-									</form>
-									
-									<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-									 <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
-									 <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
-								 </div>
-									
-									
-								</div>
-							</div>
 						</a>
-					</div>
-					</div>
+					</div>	
 				</form>
-
 				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+				
 			</div>
 		</div>
+		<div class="pen-title">
+	<div class="container">
+	<div class="card alt">
+	<div class="toggle"></div>
+	<h1 class="title">Register
+	<div class="close"></div>
+	</h1>
+	<form>
+	<div class="input-container">
+		<input type="#{type}" id="#{label}" required="required"/>
+		<label for="#{label}">Username</label>
+		<div class="bar"></div>
+	</div>
+	<div class="input-container">
+		<input type="#{type}" id="#{label}" required="required"/>
+		<label for="#{label}">Password</label>
+		<div class="bar"></div>
+	</div>
+	<div class="input-container">
+		<input type="#{type}" id="#{label}" required="required"/>
+		<label for="#{label}">Repeat Password</label>
+		<div class="bar"></div>
+	</div>
+	<div class="button-container">
+		<button><span>Next</span></button>
+	</div>
+	</form>
+	</div>
 	</div>
 	
-	
 
+</div>
+	
 	<div id="dropDownSelect1"></div>
 	
 <!--===============================================================================================-->
@@ -142,6 +143,7 @@
 		$('.close').on('click', function() {
 		  $('.container').stop().removeClass('active');
 		});
+
 	</script>
 <!--===============================================================================================-->
 	<script src="vendor/daterangepicker/moment.min.js"></script>
